@@ -13,13 +13,13 @@ const { PORT = 3000 } = process.env;
 const app = express();
 mongoose.connect(DB_ADDRESS);
 
-var corsOptions = {
-  origin: 'http://example.com',
-  optionsSuccessStatus: 200
-}
+const corsOptions = {
+  origin: 'https://pm2-front-edge.students.nomoredomainsrocks.ru',
+  optionsSuccessStatus: 200,
+};
 
 // Только для локальных тестов. Не используйте это в продакшене
-app.use(cors(corsOptions))
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
