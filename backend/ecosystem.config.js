@@ -28,7 +28,7 @@ module.exports = {
       user: DEPLOY_USER,
       host: DEPLOY_HOST,
       ref: DEPLOY_REF,
-      repo: 'https://github.com/KulQG/web-plus-pm2-deploy.git',
+      repo: 'https://github.com/KulQG/web-plus-pm2-deploy',
       path: DEPLOY_PATH,
       'pre-deploy': `scp ./.env.deploy ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}`,
       'post-deploy': 'npm i && npm run build',
