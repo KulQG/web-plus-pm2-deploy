@@ -14,7 +14,7 @@ const app = express();
 mongoose.connect(DB_ADDRESS);
 
 const corsOptions = {
-  origin: 'https://pm2-front-edge.students.nomoredomainsrocks.ru',
+  origin: 'https://back-edge.students.nomoredomainsrocks.ru',
   optionsSuccessStatus: 200,
 };
 
